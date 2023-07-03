@@ -31,6 +31,7 @@ int main()
     int dice; // hold computer generated number
     char choice;
  
+    srand(time(0)) ; // "Seed" the random generator
 
     string var="\n=========================================================================================="
  "\n   CCCCC      A        SSSSSSSSS   IIIIIIIII  NN     NN    OOOOOOOO     "
