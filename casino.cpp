@@ -31,7 +31,6 @@ int main()
     int dice; // hold computer generated number
     char choice;
  
-    srand(time(0)) ; // "Seed" the random generator
 
     string var="\n=========================================================================================="
  "\n   CCCCC      A        SSSSSSSSS   IIIIIIIII  NN     NN    OOOOOOOO     "
@@ -78,6 +77,8 @@ int main()
                     <<"\nRe-enter data\n ";
         }while(guess <= 0 || guess > 10);
  
+ 
+        srand(time(0)) ; // "Seed" the random generator   
         dice = rand()%10 + 1; // it Will hold the randomly generated integer between 1 and 10
     
         if(dice == guess)
